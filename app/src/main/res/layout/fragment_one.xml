@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout_data_input"
+            android:layout_marginBottom="50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_site_id_title"
+                android:layout_marginStart="10dp"
+                android:layout_alignTop="@+id/edt_site_id"
+                android:layout_alignBottom="@+id/edt_site_id"
+                android:gravity="center_vertical"
+                android:text="Site ID: "/>
+
+            <EditText
+                android:layout_toEndOf="@+id/txt_site_name_title"
+                android:id="@+id/edt_site_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp">
+            </EditText>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_site_name_title"
+                android:layout_below="@+id/edt_site_id"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_alignTop="@+id/edt_site_name"
+                android:layout_alignBottom="@+id/edt_site_name"
+                android:gravity="center_vertical"
+                android:text="Site Name: "/>
+
+            <EditText
+                android:layout_toEndOf="@+id/txt_site_name_title"
+                android:layout_below="@+id/edt_site_id"
+                android:id="@+id/edt_site_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp">
+            </EditText>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_site_date_title"
+                android:layout_below="@+id/edt_site_name"
+                android:layout_marginStart="10dp"
+                android:layout_alignTop="@+id/edt_site_date"
+                android:layout_alignBottom="@+id/edt_site_date"
+                android:gravity="center_vertical"
+                android:text="Date: "/>
+
+
+            <EditText
+                android:layout_toEndOf="@+id/txt_site_name_title"
+                android:layout_below="@+id/edt_site_name"
+                android:id="@+id/edt_site_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp">
+            </EditText>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_site_problem_title"
+                android:layout_below="@+id/edt_site_date"
+                android:layout_marginStart="10dp"
+                android:layout_alignTop="@+id/edt_site_problem"
+                android:layout_alignBottom="@+id/edt_site_problem"
+                android:gravity="center_vertical"
+                android:text="Problem: "/>
+
+            <EditText
+                android:layout_toEndOf="@+id/txt_site_name_title"
+                android:layout_below="@+id/edt_site_date"
+                android:id="@+id/edt_site_problem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp">
+            </EditText>
+
+        </RelativeLayout>
+
+        <Button
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/btn_frag_one_next"
+            android:layout_width="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:paddingTop="5dp"
+            android:paddingStart="5dp"
+            android:paddingBottom="5dp"
+            android:paddingEnd="5dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:textColor="#ffffff"
+            android:layout_height="wrap_content"
+            android:text="Next"/>
+
+</RelativeLayout>
